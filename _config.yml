@@ -1,9 +1,9 @@
+# General configuration
+
+logo: /assets/img/casual_rpanades.jpg
+description: An overview of my research activities and scientific interests
+show_downloads: true
+
 # Jekyll theme
 
 theme: jekyll-theme-minimal
-
-# General configuration
-
-title: Panadestein's personal website
-description: An overview of my research activities and scientific interests
-show_downloads: "True"
