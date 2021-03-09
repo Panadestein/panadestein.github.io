@@ -1,3 +1,3 @@
-# This are the source files of my personal website
+# panadestein.github.io
 
-More content will be added progressively
+Source code for my minimalistic personal website
