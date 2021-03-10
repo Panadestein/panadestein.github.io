@@ -1,0 +1,33 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+section {
+  width:550px;
+  float:right;
+  padding-bottom:50px;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav {
+  overflow: visible;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: none;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/*.circle {
+    border-radius: 25%;
+    -moz-border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -o-border-radius: 25%;
+}*/
