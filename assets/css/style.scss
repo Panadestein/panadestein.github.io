@@ -3,10 +3,22 @@
 
 @import "{{ site.theme }}";
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 60%;
+@media print, screen and (max-width: 480px) {
+  header {
+      width:auto;
+      padding:0;
+  }
+    
+  body {
+    padding:15px;
+  }
+
+  .downloads {
+    width:99%;
+  }
+
+  .downloads li, .downloads li + li + li {
+    width:33%;
   }
 }
 
