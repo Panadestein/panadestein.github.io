@@ -3,6 +3,16 @@
 
 @import "{{ site.theme }}";
 
+body {
+  background-color: #fff;
+  padding:50px;
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#727272;
+  font-weight:400;
+  height: 100%;
+  width: 100%;
+}
+
 section {
   width:550px;
   float:right;
