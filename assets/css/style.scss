@@ -4,9 +4,9 @@
 @import "{{ site.theme }}";
 
 @media print, screen and (max-width: 480px) {
-  body {
-      width:100%;
-      padding:20%;
+  .wrapper {
+    width:100%;
+    margin:0 auto;
   }
 
   .downloads {
