@@ -3,26 +3,11 @@
 
 @import "{{ site.theme }}";
 
-/*@media print, screen and (max-width: 480px) {
-  .wrapper {
-    width:100%;
-    margin:0 auto;
-  }
-
-  .downloads {
-    width:99%;
-  }
-
-  .downloads li, .downloads li + li + li {
-    width:33%;
-  }
-}*/
-
-/*section {
+section {
   width:550px;
   float:right;
   padding-bottom:50px;
-}*/
+}
 
 /* Style the links inside the navigation bar */
 
@@ -39,10 +24,3 @@
   text-decoration: none;
   font-size: 17px;
 }
-
-/*.circle {
-    border-radius: 25%;
-    -moz-border-radius: 25%;
-    -webkit-border-radius: 25%;
-    -o-border-radius: 25%;
-}*/
