@@ -3,6 +3,21 @@
 
 @import "{{ site.theme }}";
 
+section {
+  width:65%;
+  float:right;
+  padding-bottom:50px;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+   section {
+     width:100%;
+     float:right;
+     padding-bottom:50px;
+   }
+}
+
 /* Style the links inside the navigation bar */
 
 .topnav {
