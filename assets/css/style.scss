@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+pre .str, code .str { color:#267CB9; }
+
 section {
   width:65%;
   float:right;
@@ -10,7 +12,7 @@ section {
 }
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
    section {
      width:100%;
      float:right;
