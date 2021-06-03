@@ -1,9 +1,26 @@
+# Plugins
+
+plugins:
+  - jekyll-seo-tag
+
 # General configuration
 
 logo: /assets/img/casual_rpanades.jpg
-description: An overview of my research activities and scientific interests
 show_downloads: true
 
 # Jekyll theme
 
 theme: jekyll-theme-minimal
+
+# About site
+
+title: Ramon L. Panades-Barrueta
+tagline: Ramon L. Panades-Barrueta
+description: An overview of my research activities and scientific interests
+
+# About me
+
+author:
+  name:              Ramon L. Panades-Barrueta
+  url:               https://panadestein.github.io/
+  email:             rpana92@gmail.com
