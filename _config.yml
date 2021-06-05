@@ -15,12 +15,14 @@ theme: jekyll-theme-minimal
 # About site
 
 title: Ramon L. Panades-Barrueta
-tagline: Ramon L. Panades-Barrueta
-description: An overview of my research activities and scientific interests
+tagline: "Ramon L. Panades-Barrueta"
+description: "An overview of my research activities and scientific interests"
+url: https://panadestein.github.io
+
 
 # About me
 
 author:
   name:              Ramon L. Panades-Barrueta
-  url:               https://panadestein.github.io/
+  url:               https://panadestein.github.io
   email:             rpana92@gmail.com
