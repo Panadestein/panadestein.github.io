@@ -16,12 +16,12 @@ title: Ramón L. Panadés-Barrueta
   </p>
   <center>
     <code class="prettyprint">
-    (import contextlib io)
-    (with [(contextlib.redirect_stdout
-             (setx zen (io.StringIO "")))]
-      (import this))
-    (print (get (.getvalue zen)
-                (slice 99 130)))
+    (import contextlib io)<br>
+    (with [(contextlib.redirect_stdout<br>
+             (setx zen (io.StringIO "")))]<br>
+      (import this))<br>
+    (print (get (.getvalue zen)<br>
+                (slice 99 130)))<br>
     </code>
   </center>
 </div>
