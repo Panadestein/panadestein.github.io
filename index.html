@@ -12,11 +12,16 @@ title: Ramón L. Panadés-Barrueta
     My name is Ramón, welcome to my website! I hold a <a href="https://theses.fr/2020LILUR022" target="_blank" rel="noopener noreferrer">PhD</a> in physics, although the focus of my work has been so far in the field of theoretical and computational chemistry. I have experience in both the development and application of electronic structure and nuclear quantum dynamics methods. <a href="/content/research">Here</a> you can find more information about my research activities.
   </p>
   <p align="justify">
-    I am very passionate about mathematics and computer science in general. I am an advocate of the <a href="https://panadestein.github.io/emacsd/">Emacs</a> text editor. I also happen to write <a href="/content/poetry">verses</a> sometimes. I firmly believe in the beauty of simplicity, here is how I like to highlight it:
+    I am very passionate about mathematics and computer science in general. I am an advocate of the Emacs text editor, see my <a href="https://panadestein.github.io/emacsd/" target="_blank" rel="noopener noreferrer">literate config</a>. I also happen to write <a href="/content/poetry">verses</a> sometimes. I firmly believe in the beauty of simplicity, here is how I like to highlight it:
   </p>
   <center>
     <code class="prettyprint">
-  python -c 'import this' | awk 'NR == 5'
+    (import contextlib io)
+    (with [(contextlib.redirect_stdout
+             (setx zen (io.StringIO "")))]
+      (import this))
+    (print (get (.getvalue zen)
+                (slice 99 130)))
     </code>
   </center>
 </div>
