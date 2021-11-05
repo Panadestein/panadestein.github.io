@@ -4,6 +4,9 @@
 @import "{{ site.theme }}";
 
 pre .str, code .str { color:#267CB9; }
+pre .kwd, code .kwd { color:#267CB9; }
+code {font-size: 101%;
+      font-family: math;}
 
 section {
   width:65%;

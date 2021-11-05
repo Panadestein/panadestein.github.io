@@ -14,16 +14,11 @@ title: Ramón L. Panadés-Barrueta
   <p align="justify">
     I am very passionate about mathematics and computer science in general. I am an advocate of the Emacs text editor, see my <a href="https://panadestein.github.io/emacsd/" target="_blank" rel="noopener noreferrer">literate config</a>. I also happen to write <a href="/content/poetry">verses</a> sometimes. I firmly believe in the beauty of simplicity, here is how I like to highlight it:
   </p>
+
   <center>
     <code class="prettyprint">
-       <pre>
-       (import contextlib io)
-       (with [(contextlib.redirect_stdout
-                (setx zen (io.StringIO "")))]
-         (import this))
-       (print (get (.getvalue zen)
-                   (slice 99 130)))
-       </pre>
+      <b>(define Y (lambda (f) ((lambda (x) (x x)) (lambda (x) (f (lambda g (apply (x x) g)))))))</b>
     </code>
   </center>
+
 </div>
