@@ -17,7 +17,8 @@ title: Ramón L. Panadés-Barrueta
 
   <center>
     <code class="prettyprint">
-      (define Y (&lambda; (f) ((&lambda; (x) (x x)) (&lambda; (x) (f (&lambda; g (apply (x x) g)))))))
+    (define Y (λ (f) ((λ (x) (f (x x)))
+		      (λ (x) (f (x x))))))
     </code>
   </center>
 
