@@ -2,7 +2,8 @@
 layout: default
 title: Ramón L. Panadés-Barrueta
 ---
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
 <div>
   <br>
   <br>
@@ -12,14 +13,15 @@ title: Ramón L. Panadés-Barrueta
     My name is Ramón, welcome to my website! I hold a <a href="https://theses.fr/2020LILUR022" target="_blank" rel="noopener noreferrer">PhD</a> in physics, although the focus of my work has been so far in the field of theoretical and computational chemistry. I have experience in both the development and application of electronic structure and nuclear quantum dynamics methods. On this site, you can find more information about my <a href="/content/research">research</a> activities.
   </p>
   <p align="justify">
-    I am very passionate about mathematics and computer science in general. The Emacs text editor is my favorite piece of software, see my <a href="https://panadestein.github.io/emacsd/" target="_blank" rel="noopener noreferrer">literate config</a>. I also happen to write <a href="/content/poetry">verses</a> sometimes. As a firm believer in the beauty of simplicity, I consider the following expression to be art:
+    I am very passionate about mathematics and computer science in general. The Emacs text editor is my favorite piece of software, see my <a href="https://panadestein.github.io/emacsd/" target="_blank" rel="noopener noreferrer">literate config</a>. I also happen to write <a href="/content/poetry">verses</a> sometimes. As a firm believer in the beauty of simplicity, I consider the following expression to be a work of art:
   </p>
 
-  <center>
-    <code class="prettyprint">
-    (define Y (λ (f) ((λ (x) (f (x x)))
-		      (λ (x) (f (x x))))))
+  <pre>
+    <code class="lisp hljs">
+     (define Y (λ (f) ((λ (x) (f (x x))) (λ (x) (f (x x))))))
     </code>
-  </center>
+  </pre>
+
+  <script>hljs.initHighlightingOnLoad();</script>
 
 </div>
