@@ -1,95 +1,97 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:image" content="https://panadestein.github.io/assets/img/casual_rpanades.jpg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="UnH0G3uduefQ6n9JV-YfihFU5SrKCWPHlvu6Ancvghs" />
+<html lang="{{ site.lang | default: " en-US" }}">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-196649608-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'UA-196649608-1');
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="https://panadestein.github.io/assets/img/casual_rpanades.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="UnH0G3uduefQ6n9JV-YfihFU5SrKCWPHlvu6Ancvghs" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTFEE5L9R"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTFEE5L9R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-0LTFEE5L9R');
-    </script>
+    gtag('config', 'G-0LTFEE5L9R');
+  </script>
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <!--[if lt IE 9]>
+  {% seo %}
+  <link rel="stylesheet" href="{{ " /assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/53d61a2f86.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <center>
-      <div class="topnav">
-        <a href="/">Home</a>
-        <a href="/content/cv">CV</a>
-        <a href="/content/research">Research</a>
-        <a href="/content/poetry">Poetry</a>
-      </div>
-    </center>
-    <div class="wrapper">
-      <header>
-	<br>
-	<br>
-	<br>
-        {% if site.logo %}
-	<center>
-        <img src="{{site.logo | relative_url}}" alt="Logo" class="circle" width="75%"/>
-	<br>
-	<br>
-	<nobr>
-        <a href="mailto:rpana92@gmail.com"><i class="fa fa-envelope-square ai-2x"></i></a>
-        <a href="https://www.researchgate.net/profile/Ramon_Panades-Barrueta" target="_blank" rel="noopener noreferrer">
-	  <i class="ai ai-researchgate-square ai-2x"></i></a>
-        <a href="https://scholar.google.com/citations?user=IMWuq6wAAAAJ&hl" target="_blank" rel="noopener noreferrer">
-	  <i class="ai ai-google-scholar-square ai-2x"></i></a>
-        <a href="https://github.com/Panadestein" target="_blank" rel="noopener noreferrer"> <i class="fa fa-github fa-2x"></i></a>
-        <a href="https://stackoverflow.com/users/5661001/panadestein" target="_blank" rel="noopener noreferrer">
-	 <i class="ai ai-stackoverflow-square ai-2x"></i></a>
-        <a href="https://drive.google.com/file/d/1rashHxctt1QFjM5n4DogiOnV3KdGkFhw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-	 <i class="ai ai-cv-square ai-2x"></i></a>
-        <a href="https://www.linkedin.com/in/ram%C3%B3n-l-panad%C3%A9s-barrueta-phd-a3b851129/" target="_blank" rel="noopener noreferrer">
-	  <i class="fa fa-linkedin-square fa-2x"></i></a>
-	</nobr>
-	</center>
-        {% endif %}
+</head>
 
-      </header>
-      <section>
+<body>
+  <center>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/content/cv">CV</a>
+      <a href="/content/research">Research</a>
+      <a href="/content/poetry">Poetry</a>
+    </div>
+  </center>
+  <div class="wrapper">
+    <header>
+      <br>
+      <br>
+      <br>
+      {% if site.logo %}
+      <center>
+        <img src="{{site.logo | relative_url}}" alt="Logo" class="circle" width="75%" />
+        <br>
+        <br>
+        <nobr>
+          <a href="mailto:rpana92@gmail.com"><i class="fa fa-envelope-square ai-2x"></i></a>
+          <a href="https://www.researchgate.net/profile/Ramon_Panades-Barrueta" target="_blank"
+            rel="noopener noreferrer">
+            <i class="ai ai-researchgate-square ai-2x"></i></a>
+          <a href="https://scholar.google.com/citations?user=IMWuq6wAAAAJ&hl" target="_blank" rel="noopener noreferrer">
+            <i class="ai ai-google-scholar-square ai-2x"></i></a>
+          <a href="https://github.com/Panadestein" target="_blank" rel="noopener noreferrer"> <i
+              class="fa fa-github fa-2x"></i></a>
+          <a href="https://www.hackerrank.com/rpana92" target="_blank" rel="noopener noreferrer"> <i
+              class="fab fa-hackerrank fa-2x"></i></a>
+          <a href="https://stackoverflow.com/users/5661001/panadestein" target="_blank" rel="noopener noreferrer">
+            <i class="ai ai-stackoverflow-square ai-2x"></i></a>
+          <a href="https://drive.google.com/file/d/1rashHxctt1QFjM5n4DogiOnV3KdGkFhw/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">
+            <i class="ai ai-cv-square ai-2x"></i></a>
+          <a href="https://www.linkedin.com/in/ram%C3%B3n-l-panad%C3%A9s-barrueta-phd-a3b851129/" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fa fa-linkedin-square fa-2x"></i></a>
+        </nobr>
+      </center>
+      {% endif %}
+
+    </header>
+    <section>
 
       {{ content }}
 
-      </section>
-      <!--<footer>
+    </section>
+    <!--<footer>
       </footer>-->
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
-    {% endif %}
-  </body>
+  </div>
+  <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
+  {% if site.google_analytics %}
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', '{{ site.google_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+</body>
+
 </html>
