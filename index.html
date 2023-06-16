@@ -2,7 +2,13 @@
 layout: default
 title: Ramón L. Panadés-Barrueta
 ---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<style>
+  .highlight {
+    background-color: #267CB9;
+  }
+</style>
 <div>
   <br>
   <br>
@@ -24,10 +30,23 @@ title: Ramón L. Panadés-Barrueta
     As a firm believer in the beauty of simplicity, I consider the following expression to be a magnum opus:
   </p>
 
+  <!-- Mega dirty hack. Can you even see Lisp here? -->
   <center>
-    <code class="prettyprint">
-      (define Y (λ (f) ((λ (x) (f (x x))) (λ (x) (f (x x))))))
-    </code>
+    <div class="lisp-code">
+      <code class="prettyprint">
+        <span class="open" id="open0">(</span>define Y <span class="open" id="open1">(</span>λ <span class="open" id="open2">(</span>f<span class="close" id="close2">)</span> <span class="open" id="open3">(</span><span class="open" id="open4">(</span>λ <span class="open" id="open5">(</span>x<span class="close" id="close5">)</span> <span class="open" id="open6">(</span>f <span class="open" id="open7">(</span>x x<span class="close" id="close7">)</span><span class="close" id="close6">)</span><span class="close" id="close4">)</span><span class="close" id="close3">)</span> <span class="open" id="open8">(</span><span class="open" id="open9">(</span>λ <span class="open" id="open10">(</span>x<span class="close" id="close10">)</span> <span class="open" id="open11">(</span>f <span class="open" id="open12">(</span>x x<span class="close" id="close12">)</span><span class="close" id="close11">)</span><span class="close" id="close9">)</span><span class="close" id="close8">)</span><span class="close" id="close1">)</span><span class="close" id="close0">)</span>
+      </code>
+    </div>
   </center>
 
 </div>
+
+<script>
+  $(document).ready(function () {
+    $('span.open, span.close').hover(function () {
+      var id = $(this).attr('id').split('n')[1] || $(this).attr('id').split('e')[1];
+      $('#open' + id).toggleClass('highlight');
+      $('#close' + id).toggleClass('highlight');
+    });
+  });
+</script>
