@@ -19,34 +19,16 @@ title: Home
     target="_blank" rel="noopener noreferrer">quantum computing</a>. I hold a
     <a href="https://theses.fr/2020LILUR022" target="_blank" rel="noopener noreferrer">Ph.D.</a>
     in physics with a focus on theoretical chemistry. Being a polyglot programmer, I enjoy coding in
-    C, C++, Python, Julia and Fortran. Additionally, I am proficient in performance engineering and parallel computing.
-    Beyond my scientific pursuits, I find joy in the craft of <a href="/content/poetry">verses</a>.
+    C++, Python, Julia, and BQN. Additionally, I am proficient in performance engineering and parallel computing.
+    Beyond my scientific pursuits, I find joy in progressive rock and in the craft of <a href="/content/poetry">verses</a>.
   </p>
 
   <p align="justify">
     I've rediscovered the Lisp arts and the power of functional programming, ergo my affinity for
     <a href="https://panadestein.github.io/emacsd/" target="_blank" rel="noopener noreferrer">Emacs</a> and
     <a href="https://github.com/Panadestein/nixos-config" target="_blank" rel="noopener noreferrer">NixOS</a>.
-    As a firm believer in the beauty of simplicity, I consider the following expression to be a magnum opus:
+    I hold in high regard the expressive power of array languages and embrace the principle of <strong>notation as a
+    tool of thought</strong> as fundamental to my computational philosophy.
   </p>
 
-  <!-- Mega dirty hack. Can you even see Lisp here? -->
-  <center>
-    <div class="lisp-code">
-      <code class="prettyprint">
-            <span class="open" id="open0">(</span>define Y <span class="open" id="open1">(</span>λ <span class="open" id="open2">(</span>f<span class="close" id="close2">)</span> <span class="open" id="open3">(</span><span class="open" id="open4">(</span>λ <span class="open" id="open5">(</span>x<span class="close" id="close5">)</span> <span class="open" id="open6">(</span>f <span class="open" id="open7">(</span>x x<span class="close" id="close7">)</span><span class="close" id="close6">)</span><span class="close" id="close4">)</span> <span class="open" id="open8">(</span>λ <span class="open" id="open9">(</span>x<span class="close" id="close9">)</span> <span class="open" id="open10">(</span>f <span class="open" id="open11">(</span>x x<span class="close" id="close11">)</span><span class="close" id="close10">)</span><span class="close" id="close8">)</span><span class="close" id="close3">)</span><span class="close" id="close1">)</span><span class="close" id="close0">)</span>
-          </code>
-    </div>
-  </center>
-
 </div>
-
-<script>
-  $(document).ready(function () {
-    $('span.open, span.close').hover(function () {
-      var id = $(this).attr('id').split('n')[1] || $(this).attr('id').split('e')[1];
-      $('#open' + id).toggleClass('highlight');
-      $('#close' + id).toggleClass('highlight');
-    });
-  });
-</script>
