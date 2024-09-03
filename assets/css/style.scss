@@ -65,11 +65,42 @@ section {
 }
 
 
-/* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar
 .topnav a {
     float: none;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+*/
+
+/* Style the navigation bar */
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    flex: 1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .topnav {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center-align items when stacked */
+    }
+
+    .topnav a {
+        padding: 10px; /* Adjust padding for better touch ergonomics */
+        font-size: 15px; /* Adjust font size for smaller screens */
+    }
 }
