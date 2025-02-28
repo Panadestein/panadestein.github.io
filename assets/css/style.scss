@@ -26,6 +26,7 @@ section {
 
 .icon-size-stackexchange {
     width: 22px;
+    filter: invert(41%) sepia(89%) saturate(446%) hue-rotate(161deg) brightness(87%) contrast(91%);
 }
 
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
