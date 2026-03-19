@@ -1,103 +1,109 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
-
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:image" content="https://panadestein.github.io/assets/img/casual_rpanades.jpg" />
+    <meta property="og:image" content="https://panadestein.github.io/assets/img/casual_rpanades.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="UnH0G3uduefQ6n9JV-YfihFU5SrKCWPHlvu6Ancvghs" />
+    <meta name="google-site-verification" content="UnH0G3uduefQ6n9JV-YfihFU5SrKCWPHlvu6Ancvghs">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0LTFEE5L9R"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag() { dataLayer.push(arguments); }
-     gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-     gtag('config', 'G-0LTFEE5L9R');
+      gtag('config', 'G-0LTFEE5L9R');
     </script>
 
-    <!-- Favicon -->
     <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
 
     {% seo %}
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
-
-  <body>
-    <center>
-      <div class="topnav">
-	<a href="/">Home</a>
-	<a href="/content/cv">CV</a>
-	<a href="/content/research">Research</a>
-	<a href="/content/poetry">Poetry</a>
-	<a href="https://panadestein.github.io/blog/">Blog</a>
-      </div>
-    </center>
-    <div class="wrapper">
-      <header>
-	<br>
-	<br>
-	<br>
-	{% if site.logo %}
-	<center>
-          <img src="{{site.logo | relative_url}}" alt="Logo" class="circle" width="75%" />
-          <br>
-          <br>
-	  <nobr>
-	    <a href="https://www.researchgate.net/profile/Ramon_Panades-Barrueta" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/researchgate-square.svg' | relative_url }}" alt="ResearchGate" class="icon-size" />
-	    </a>
-	    <a href="https://scholar.google.com/citations?user=IMWuq6wAAAAJ&hl" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/google-scholar-square.svg' | relative_url }}" alt="Google Scholar" class="icon-size" />
-	    </a>
-	    <a href="https://stackexchange.com/users/7444233/panadestein?tab=accounts" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/stack-exchange.svg' | relative_url }}" alt="Stack Exchange" class="icon-size-stackexchange" />
-	    </a>
-	    <a href="https://codeberg.org/panadestein" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/codebergblue.svg' | relative_url }}" alt="Codeberg" class="icon-size-codeberg" />
-	    </a>
-	    <a href="https://github.com/Panadestein" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/github.svg' | relative_url }}" alt="GitHub" class="icon-size icon-size-github" />
-	    </a>
-	    <a href="https://leetcode.com/u/panadestein" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/leetcode.svg' | relative_url }}" alt="LeetCode" class="icon-size icon-size-leetcode" />
-	    </a>
-	    <a href="https://www.hackerrank.com/rpana92" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/hackerrank.svg' | relative_url }}" alt="HackerRank" class="icon-size icon-size-hackerrank" />
-	    </a>
-	    <a href="https://drive.google.com/file/d/11WQRRjJzoX7FKDYhGq7zcGgdXeC5hqhl/view?usp=drive_link/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/cv-square.svg' | relative_url }}" alt="CV" class="icon-size" />
-	    </a>
-	    <a href="https://www.linkedin.com/in/rpanades" target="_blank" rel="noopener noreferrer">
-	      <img src="{{ 'assets/img/icons/linkedin.svg' | relative_url }}" alt="LinkedIn" class="icon-size" />
-	    </a>
-	  </nobr>
-	</center>
-	{% endif %}
-
+  {% assign body_classes = "" %}
+  {% if page.url == "/" %}
+    {% assign body_classes = body_classes | append: " page-home" %}
+  {% endif %}
+  {% if page.url == "/content/cv/" %}
+    {% assign body_classes = body_classes | append: " page-cv" %}
+  {% endif %}
+  {% if page.url == "/content/research/" %}
+    {% assign body_classes = body_classes | append: " page-research" %}
+  {% endif %}
+  {% if page.url == "/content/poetry/" %}
+    {% assign body_classes = body_classes | append: " page-poetry-index" %}
+  {% endif %}
+  {% if page.url contains "/content/poetry/poem" %}
+    {% assign body_classes = body_classes | append: " page-poem" %}
+  {% endif %}
+  <body class="{{ body_classes | strip }}">
+    <nav class="site-nav" aria-label="Primary">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/content/cv/' | relative_url }}">CV</a>
+      <a href="{{ '/content/research/' | relative_url }}">Research</a>
+      <a href="{{ '/content/poetry/' | relative_url }}">Poetry</a>
+      <a href="https://panadestein.github.io/blog/">Blog</a>
+    </nav>
+    <div class="wrapper site-layout">
+      <header class="profile-panel">
+        {% if site.logo %}
+          <div class="profile-card">
+            <img
+              src="{{ site.logo | relative_url }}"
+              alt="Portrait of Ramon L. Panades-Barrueta"
+              class="profile-photo circle"
+              decoding="async"
+            >
+            <div class="profile-links" aria-label="Profile links">
+              <a href="https://www.researchgate.net/profile/Ramon_Panades-Barrueta" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate">
+                <img src="{{ 'assets/img/icons/researchgate-square.svg' | relative_url }}" alt="" class="icon-size">
+              </a>
+              <a href="https://scholar.google.com/citations?user=IMWuq6wAAAAJ&hl" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                <img src="{{ 'assets/img/icons/google-scholar-square.svg' | relative_url }}" alt="" class="icon-size">
+              </a>
+              <a href="https://stackexchange.com/users/7444233/panadestein?tab=accounts" target="_blank" rel="noopener noreferrer" aria-label="Stack Exchange">
+                <img src="{{ 'assets/img/icons/stack-exchange.svg' | relative_url }}" alt="" class="icon-size-stackexchange">
+              </a>
+              <a href="https://codeberg.org/panadestein" target="_blank" rel="noopener noreferrer" aria-label="Codeberg">
+                <img src="{{ 'assets/img/icons/codebergblue.svg' | relative_url }}" alt="" class="icon-size-codeberg">
+              </a>
+              <a href="https://github.com/Panadestein" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="{{ 'assets/img/icons/github.svg' | relative_url }}" alt="" class="icon-size icon-size-github">
+              </a>
+              <a href="https://leetcode.com/u/panadestein" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+                <img src="{{ 'assets/img/icons/leetcode.svg' | relative_url }}" alt="" class="icon-size icon-size-leetcode">
+              </a>
+              <a href="https://www.hackerrank.com/rpana92" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
+                <img src="{{ 'assets/img/icons/hackerrank.svg' | relative_url }}" alt="" class="icon-size icon-size-hackerrank">
+              </a>
+              <a href="https://drive.google.com/file/d/11WQRRjJzoX7FKDYhGq7zcGgdXeC5hqhl/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+                <img src="{{ 'assets/img/icons/cv-square.svg' | relative_url }}" alt="" class="icon-size">
+              </a>
+              <a href="https://www.linkedin.com/in/rpanades" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="{{ 'assets/img/icons/linkedin.svg' | relative_url }}" alt="" class="icon-size">
+              </a>
+            </div>
+          </div>
+        {% endif %}
       </header>
-      <section>
-
-	{{ content }}
-
-      </section>
+      <main class="page-content">
+        {{ content }}
+      </main>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
-    <script>
-     (function (i, s, o, g, r, a, m) {
-       i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-         (i[r].q = i[r].q || []).push(arguments)
-       }, i[r].l = 1 * new Date(); a = s.createElement(o),
-       m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-     ga('create', '{{ site.google_analytics }}', 'auto');
-     ga('send', 'pageview');
-    </script>
+      <script>
+        (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
     {% endif %}
   </body>
-
 </html>
