@@ -8,14 +8,18 @@ title: Research
   }
 
   details>summary span.icon {
-    width: 24px;
-    height: 24px;
-    transition: all 0.3s;
-    margin-left: auto;
+    width: 0.45rem;
+    height: 0.45rem;
+    margin: 0.35rem 0.2rem 0 auto;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+    flex: 0 0 auto;
   }
 
   details[open] summary span.icon {
-    transform: rotate(180deg);
+    transform: rotate(225deg);
   }
 
   summary {
@@ -36,7 +40,7 @@ title: Research
   <details open>
     <summary>
       <b>Software engineering for quantum computing</b>
-      <span class="icon">⬇</span>
+      <span class="icon" aria-hidden="true"></span>
     </summary>
     <p align="justify">
       In my current role as a software engineer at <a href="https://algorithmiq.fi/" target="_blank"
@@ -49,7 +53,7 @@ title: Research
   <details>
     <summary>
       <b>Low-scaling MBPT algorithms</b>
-      <span class="icon">⬇</span>
+      <span class="icon" aria-hidden="true"></span>
     </summary>
     <p align="justify">
       During my second postdoc, in Prof. Dorothea Golze's Large-Scale Theoretical Spectroscopy Emmy
@@ -70,7 +74,7 @@ title: Research
   <details>
     <summary>
       <b>Massively parallel quantum Monte Carlo algorithms</b>
-      <span class="icon">⬇</span>
+      <span class="icon" aria-hidden="true"></span>
     </summary>
     <p align="justify">
       I completed my first postdoc as part of the <a href="https://trex-coe.eu/partners/teams" target="_blank"
@@ -93,7 +97,7 @@ title: Research
   <details>
     <summary>
       <b>Nuclear quantum dynamics and tensor decomposition algorithms</b>
-      <span class="icon">⬇</span>
+      <span class="icon" aria-hidden="true"></span>
     </summary>
     <p align="justify">
       I obtained my PhD in physics at the University of Lille, under the supervision of <a
